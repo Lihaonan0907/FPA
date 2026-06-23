@@ -157,12 +157,6 @@ year={2026},
 publisher={IEEE}
 }
 
-##
-
-## License
-
-This repository currently includes an MIT license draft. Confirm the final license with all authors and verify third-party code/data licenses before publishing.
-
 ## Responsible Use
 
 This code is intended for academic research on physical adversarial robustness and defense. Do not use it to evade real-world safety systems or deploy adversarial camouflage outside controlled, authorized research settings.
