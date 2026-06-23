@@ -1,0 +1,25 @@
+name: fpa
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  # The original local environment used Python 3.9 with CUDA 11.8-era wheels.
+  # Confirm exact CUDA/PyTorch/Pytorch3D versions before final reproduction.
+  - python=3.9
+  - pip
+  - numpy
+  - pillow
+  - pyyaml
+  - tqdm
+  - matplotlib
+  - tabulate
+  - scikit-image
+  - opencv
+  - pip:
+      - pycocotools
+      - thop
+      - tensorboard
+      - fvcore
+      - iopath
+      # Install torch/torchvision/torchaudio and pytorch3d wheels that match your CUDA version.

@@ -1,0 +1,20 @@
+# Minimal runtime dependencies inferred from the current code.
+# Do not blindly upgrade these for reproduction. Fill exact versions from the
+# original environment before a formal release.
+torch
+torchvision
+torchaudio
+pytorch3d
+opencv-python
+numpy
+Pillow
+scikit-image
+PyYAML
+tqdm
+matplotlib
+tabulate
+pycocotools
+thop
+tensorboard
+fvcore
+iopath

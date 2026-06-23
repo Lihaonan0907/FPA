@@ -1,0 +1,49 @@
+# Default configuration for Flexible Physical Camouflage Generation.
+# Relative paths are resolved from Pytorch3D/yolov5 to preserve the original layout.
+
+device: cuda:0
+
+# Data paths. dataset_path should contain train/, train_new/, and train_label_new/.
+dataset_path: datasets/carla_dataset
+data_yaml: data/attack.yaml
+
+# Model and texture assets. Replace these with your local files before running.
+yolo_weights: best.pt
+object3d_data_dir: data/car_model
+texture_init_path: data/3Dmodels/car/ao_di/texture.jpg
+texture_bg_path: datasets/car/single/highway/train/1.jpg
+nps_values_path: 30values.txt
+
+# Outputs/checkpoints. Large generated files should not be committed.
+output_dir: outputs/gen
+texture_checkpoint_path: checkpoints/texture_para.pt
+
+# Training parameters. Defaults mirror the original script values.
+batch_size: 8
+epochs: 5000
+learning_rate: 0.1
+diffusion_step_t: 0
+
+# Loss weights. Keep these values unless you intentionally run a new ablation.
+loss_weights:
+  adversarial: 1.0
+  detector: 1.0
+  nps: 1.0
+  tv: 10.0
+  color: 0.0
+  color_ratio: 0.0
+  df: 0.0
+
+# Renderer parameters. Offsets default to zero to preserve the original behavior.
+renderer:
+  image_size: 640
+  fov: 90.0
+  pitch_offset: 0.0
+  yaw_offset: 0.0
+  # TODO: Confirm whether these paper-level randomization ranges are already encoded in the dataset.
+  distance_range: null
+  elevation_range: null
+  azimuth_range: null
+  light_intensity_range: null
+  lighting_mode: original
+  material_reflectivity_range: null
