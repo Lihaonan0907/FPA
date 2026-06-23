@@ -149,13 +149,15 @@ These outputs are ignored by `.gitignore`.
 
 ## Citation
 
+```bibtex
 @article{li2026flexible,
-title={Flexible physical camouflage generation based on a differential approach},
-author={Li, Yang and Li, Haonan and Tan, Wenyi and Wang, Tingrui and Pan, Quan},
-journal={IEEE Internet of Things Journal},
-year={2026},
-publisher={IEEE}
+  title={Flexible Physical Camouflage Generation Based on a Differential Approach},
+  author={Li, Yang and Li, Haonan and Tan, Wenyi and Wang, Tingrui and Pan, Quan},
+  journal={IEEE Internet of Things Journal},
+  year={2026},
+  publisher={IEEE}
 }
+```
 
 ## Responsible Use
 
