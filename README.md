@@ -149,16 +149,13 @@ These outputs are ignored by `.gitignore`.
 
 ## Citation
 
-Please update `CITATION.cff` after the paper metadata is finalized.
-
-```bibtex
-@article{fpa2026,
-  title = {Flexible Physical Camouflage Generation Based on a Differential Approach},
-  author = {TODO},
-  journal = {TODO},
-  year = {2026}
+@article{li2026flexible,
+title={Flexible physical camouflage generation based on a differential approach},
+author={Li, Yang and Li, Haonan and Tan, Wenyi and Wang, Tingrui and Pan, Quan},
+journal={IEEE Internet of Things Journal},
+year={2026},
+publisher={IEEE}
 }
-```
 
 ## License
 
