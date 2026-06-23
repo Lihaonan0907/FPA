@@ -1,0 +1,43 @@
+# Default configuration for Flexible Physical Camouflage Generation.
+# This mirror is convenient when running from inside Pytorch3D/yolov5.
+# Relative paths are resolved from Pytorch3D/yolov5.
+
+device: cuda:0
+
+dataset_path: datasets/carla_dataset
+data_yaml: data/attack.yaml
+
+yolo_weights: best.pt
+object3d_data_dir: data/car_model
+texture_init_path: data/3Dmodels/car/ao_di/texture.jpg
+texture_bg_path: datasets/car/single/highway/train/1.jpg
+nps_values_path: 30values.txt
+
+output_dir: outputs/gen
+texture_checkpoint_path: checkpoints/texture_para.pt
+
+batch_size: 8
+epochs: 5000
+learning_rate: 0.1
+diffusion_step_t: 0
+
+loss_weights:
+  adversarial: 1.0
+  detector: 1.0
+  nps: 1.0
+  tv: 10.0
+  color: 0.0
+  color_ratio: 0.0
+  df: 0.0
+
+renderer:
+  image_size: 640
+  fov: 90.0
+  pitch_offset: 0.0
+  yaw_offset: 0.0
+  distance_range: null
+  elevation_range: null
+  azimuth_range: null
+  light_intensity_range: null
+  lighting_mode: original
+  material_reflectivity_range: null
